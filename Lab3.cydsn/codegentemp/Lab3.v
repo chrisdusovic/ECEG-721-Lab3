@@ -1,0 +1,41 @@
+// ======================================================================
+// Lab3.v generated from TopDesign.cysch
+// 10/06/2016 at 18:37
+// This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
+// ======================================================================
+
+`define CYDEV_CHIP_FAMILY_UNKNOWN 0
+`define CYDEV_CHIP_MEMBER_UNKNOWN 0
+`define CYDEV_CHIP_FAMILY_PSOC3 1
+`define CYDEV_CHIP_MEMBER_3A 1
+`define CYDEV_CHIP_REVISION_3A_PRODUCTION 3
+`define CYDEV_CHIP_REVISION_3A_ES3 3
+`define CYDEV_CHIP_REVISION_3A_ES2 1
+`define CYDEV_CHIP_REVISION_3A_ES1 0
+`define CYDEV_CHIP_FAMILY_PSOC4 2
+`define CYDEV_CHIP_MEMBER_4D 2
+`define CYDEV_CHIP_REVISION_4D_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4A 3
+`define CYDEV_CHIP_REVISION_4A_PRODUCTION 17
+`define CYDEV_CHIP_REVISION_4A_ES0 17
+`define CYDEV_CHIP_MEMBER_4F 4
+`define CYDEV_CHIP_REVISION_4F_PRODUCTION 0
+`define CYDEV_CHIP_FAMILY_PSOC5 3
+`define CYDEV_CHIP_MEMBER_5B 5
+`define CYDEV_CHIP_REVISION_5B_PRODUCTION 0
+`define CYDEV_CHIP_REVISION_5B_ES0 0
+`define CYDEV_CHIP_MEMBER_5A 6
+`define CYDEV_CHIP_REVISION_5A_PRODUCTION 1
+`define CYDEV_CHIP_REVISION_5A_ES1 1
+`define CYDEV_CHIP_REVISION_5A_ES0 0
+`define CYDEV_CHIP_FAMILY_USED 2
+`define CYDEV_CHIP_MEMBER_USED 4
+`define CYDEV_CHIP_REVISION_USED 0
+// top
+module top ;
+
+
+
+
+endmodule
+
