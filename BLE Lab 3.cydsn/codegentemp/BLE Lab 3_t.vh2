@@ -1,5 +1,5 @@
 -- Project:   C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\BLE Lab 3.cyprj
--- Generated: 10/06/2016 19:06:14
+-- Generated: 10/06/2016 19:21:35
 -- PSoC Creator  3.1 SP3
 
 ENTITY \BLE Lab 3\ IS
@@ -777,9 +777,9 @@ BEGIN
     \Opamp:cy_psoc4_abuf\:p4abufcell
         GENERIC MAP(
             cy_registers => "",
-            deepsleep_available => 0,
+            deepsleep_available => 1,
             has_resistor => 0,
-            needs_dsab => 0)
+            needs_dsab => 1)
         PORT MAP(
             ctb_dsi_comp => \Opamp:Net_12\);
 
