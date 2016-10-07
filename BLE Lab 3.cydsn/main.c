@@ -107,6 +107,9 @@ static void InitializeSystem(void)
     /* Start Opamp and ADC components */
 	Opamp_Start();
     ADC_Start();
+    
+    /* Start PWM component */
+    PWM_Start();
 	
     /* Start BLE component */
     CyBle_Start(GeneralEventHandler);
@@ -224,7 +227,7 @@ int main()
 
             
             /* Request the BLE block to enter Deep Sleep */
-            bleMode = CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
+            // bleMode = CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
 
             
             /* Check if the BLE block entered Deep Sleep and if so, then the 

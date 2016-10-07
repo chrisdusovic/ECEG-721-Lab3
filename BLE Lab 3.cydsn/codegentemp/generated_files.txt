@@ -60,6 +60,11 @@
   <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\ADC.h" value="NONE;ADC" />
   <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\ADC_PM.c" value="ARM_C_FILE;ADC" />
   <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\ADC_INT.c" value="ARM_C_FILE;ADC" />
+  <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\PWM.c" value="ARM_C_FILE;PWM" />
+  <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\PWM.h" value="NONE;PWM" />
+  <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\PWM_PM.c" value="ARM_C_FILE;PWM" />
+  <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
+  <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
   <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\BLE_1_bless_isr.c" value="ARM_C_FILE;BLE_1_bless_isr" />
   <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\BLE_1_bless_isr.h" value="NONE;BLE_1_bless_isr" />
   <file name="C:\Users\Chris\Desktop\ECEG-721-Lab3\BLE Lab 3.cydsn\codegentemp\ADC_IRQ.c" value="ARM_C_FILE;ADC_IRQ" />
