@@ -424,7 +424,7 @@
 #define Button_output__0__MASK 0x01u
 #define Button_output__0__OUT_SEL CYREG_UDB_PA3_CFG10
 #define Button_output__0__OUT_SEL_SHIFT 0u
-#define Button_output__0__OUT_SEL_VAL -1u
+#define Button_output__0__OUT_SEL_VAL 2u
 #define Button_output__0__PA__CFG0 CYREG_UDB_PA3_CFG0
 #define Button_output__0__PA__CFG1 CYREG_UDB_PA3_CFG1
 #define Button_output__0__PA__CFG10 CYREG_UDB_PA3_CFG10

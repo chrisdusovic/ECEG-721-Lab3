@@ -138,6 +138,18 @@
 <v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\project.h</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>BLE Lab 3</v>
+<v>BLE Lab 3\BLE Lab 3</v>
+<v>BLE Lab 3\BLE Lab 3\TopDesign</v>
+<v>BLE Lab 3\BLE Lab 3\BLE Lab 3.cydwr</v>
+<v>BLE Lab 3\BLE Lab 3\Header Files</v>
+<v>BLE Lab 3\BLE Lab 3\Header Files\BleProcessing.h</v>
+<v>BLE Lab 3\BLE Lab 3\Header Files\HeartRateProcessing.h</v>
+<v>BLE Lab 3\BLE Lab 3\Header Files\main.h</v>
+<v>BLE Lab 3\BLE Lab 3\Header Files\WatchdogTimer.h</v>
+<v>BLE Lab 3\BLE Lab 3\Source Files</v>
+<v>BLE Lab 3\BLE Lab 3\Source Files\BleProcessing.c</v>
+<v>BLE Lab 3\BLE Lab 3\Source Files\HeartRateProcessing.c</v>
 <v>BLE Lab 3\BLE Lab 3\Source Files\main.c</v>
 <v>BLE Lab 3\BLE Lab 3\Source Files\WatchdogTimer.c</v>
 <v>BLE Lab 3\BLE Lab 3\Generated_Source</v>
@@ -177,6 +189,24 @@
 <v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\BLE_1\BLE_1_StackHostMain.h</v>
 <v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\BLE_1\BLE_1_StackL2cap.h</v>
 <v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\BLE_1_bless_isr</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\BLE_1_bless_isr\BLE_1_bless_isr.c</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\BLE_1_bless_isr\BLE_1_bless_isr.h</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\Button_output</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\Button_output\Button_output.c</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\Button_output\Button_output.h</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\Button_output\Button_output_aliases.h</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\Clock_1</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\Clock_1\Clock_1.c</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\Clock_1\Clock_1.h</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>BLE Lab 3\BLE Lab 3\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BLE Lab 3\BLE Lab 3\TopDesign\TopDesign.cysch">
@@ -283,6 +313,14 @@
 <v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\Listing Files\Opamp_PM.lst</v>
 <v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM.lst</v>
 <v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_PM.lst</v>
+<v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\Listing Files\SW2_Switch.lst</v>
+<v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\Listing Files\Wakeup_ISR.lst</v>
+<v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\Listing Files\WatchdogTimer.lst</v>
+<v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\BLE Lab 3.elf</v>
+<v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\BLE Lab 3.hex</v>
+<v>BLE Lab 3\BLE Lab 3\CortexM0\ARM_GCC_484\Debug\BLE Lab 3.map</v>
+<v>BLE Lab 3\BLE Lab 3\BLE Lab 3.rpt</v>
+<v>BLE Lab 3\BLE Lab 3\BLE Lab 3_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -339,6 +377,8 @@
 <name v=".\BLE Lab 3.cydsn\Generated_Source\PSoC4\BLE_1_StackGap.h" />
 <name v=".\BLE Lab 3.cydsn\main.c" />
 <name v=".\BLE Lab 3.cydsn\HeartRateProcessing.c" />
+<name v=".\BLE Lab 3.cydsn\Generated_Source\PSoC4\PWM.h" />
+<name v=".\BLE Lab 3.cydsn\Generated_Source\PSoC4\PWM.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

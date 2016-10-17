@@ -424,7 +424,7 @@ Button_output__0__INTSTAT EQU CYREG_GPIO_PRT3_INTR
 Button_output__0__MASK EQU 0x01
 Button_output__0__OUT_SEL EQU CYREG_UDB_PA3_CFG10
 Button_output__0__OUT_SEL_SHIFT EQU 0
-Button_output__0__OUT_SEL_VAL EQU -1
+Button_output__0__OUT_SEL_VAL EQU 2
 Button_output__0__PA__CFG0 EQU CYREG_UDB_PA3_CFG0
 Button_output__0__PA__CFG1 EQU CYREG_UDB_PA3_CFG1
 Button_output__0__PA__CFG10 EQU CYREG_UDB_PA3_CFG10

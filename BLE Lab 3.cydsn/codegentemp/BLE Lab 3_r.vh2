@@ -1,5 +1,5 @@
 -- Project:   BLE Lab 3
--- Generated: 10/06/2016 20:03:09
+-- Generated: 10/17/2016 17:17:39
 -- PSoC Creator  3.1 SP3
 
 ENTITY \BLE Lab 3\ IS
@@ -36,17 +36,18 @@ ARCHITECTURE __DEFAULT__ OF \BLE Lab 3\ IS
     SIGNAL Heart_Rate_input(0)__PA : bit;
     SIGNAL Led_Advertising_Green(0)__PA : bit;
     SIGNAL Led_Connected_Blue(0)__PA : bit;
+    SIGNAL Net_1047 : bit;
     SIGNAL Net_1300 : bit;
     SIGNAL Net_1301 : bit;
-    SIGNAL Net_1646_ff7 : bit;
-    ATTRIBUTE global_signal OF Net_1646_ff7 : SIGNAL IS true;
-    SIGNAL Net_1653 : bit;
-    SIGNAL Net_1654 : bit;
-    SIGNAL Net_1655 : bit;
-    SIGNAL Net_1656 : bit;
-    SIGNAL Net_1657 : bit;
-    SIGNAL Net_1658 : bit;
-    SIGNAL Net_1660 : bit;
+    SIGNAL Net_1665 : bit;
+    SIGNAL Net_1680_ff7 : bit;
+    ATTRIBUTE global_signal OF Net_1680_ff7 : SIGNAL IS true;
+    SIGNAL Net_1711 : bit;
+    SIGNAL Net_1712 : bit;
+    SIGNAL Net_1713 : bit;
+    SIGNAL Net_1714 : bit;
+    SIGNAL Net_1716 : bit;
+    SIGNAL Net_1778 : bit;
     SIGNAL SW2_Switch(0)__PA : bit;
     SIGNAL \ADC:Net_1845_ff6\ : bit;
     ATTRIBUTE global_signal OF \ADC:Net_1845_ff6\ : SIGNAL IS true;
@@ -350,11 +351,11 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "Button_output",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000100000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
             pa_out => Button_output(0)__PA,
             oe => open,
-            pin_input => Net_1657,
+            pin_input => Net_1665,
             pad_out => Button_output(0)_PAD,
             pad_in => Button_output(0)_PAD,
             in_clock => open,
@@ -375,7 +376,7 @@ BEGIN
             ext => ClockBlock_EXTCLK,
             imo => ClockBlock_IMO,
             hfclk => ClockBlock_HFCLK,
-            ff_div_7 => Net_1646_ff7,
+            ff_div_7 => Net_1680_ff7,
             ff_div_6 => \ADC:Net_1845_ff6\);
 
     ClockGenBlock:m0s8clockgenblockcell;
@@ -715,7 +716,7 @@ BEGIN
             in_reset => open,
             out_clock_en => open,
             out_reset => open,
-            interrupt => Net_1660,
+            interrupt => Net_1047,
             in_clock => open);
 
     SW2_Switch(0):iocell
@@ -729,6 +730,7 @@ BEGIN
         PORT MAP(
             pa_out => SW2_Switch(0)__PA,
             oe => open,
+            fb => Net_1665,
             pad_in => SW2_Switch(0)_PAD,
             in_clock => ClockBlock_HFCLK,
             in_clock_en => '1',
@@ -741,7 +743,7 @@ BEGIN
         GENERIC MAP(
             int_type => "10")
         PORT MAP(
-            interrupt => Net_1660,
+            interrupt => Net_1047,
             clock => ClockBlock_HFCLK);
 
     \ADC:IRQ\:interrupt
@@ -810,17 +812,17 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => Net_1646_ff7,
+            clock => Net_1680_ff7,
             capture => '0',
             count => '1',
             reload => '0',
             stop => '0',
             start => '0',
-            tr_underflow => Net_1655,
-            tr_overflow => Net_1654,
-            tr_compare_match => Net_1656,
-            line_out => Net_1657,
-            line_out_compl => Net_1658,
-            interrupt => Net_1653);
+            tr_underflow => Net_1713,
+            tr_overflow => Net_1712,
+            tr_compare_match => Net_1714,
+            line_out => Net_1778,
+            line_out_compl => Net_1716,
+            interrupt => Net_1711);
 
 END __DEFAULT__;

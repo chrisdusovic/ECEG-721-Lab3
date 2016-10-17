@@ -424,7 +424,7 @@
 .set Button_output__0__MASK, 0x01
 .set Button_output__0__OUT_SEL, CYREG_UDB_PA3_CFG10
 .set Button_output__0__OUT_SEL_SHIFT, 0
-.set Button_output__0__OUT_SEL_VAL, -1
+.set Button_output__0__OUT_SEL_VAL, 2
 .set Button_output__0__PA__CFG0, CYREG_UDB_PA3_CFG0
 .set Button_output__0__PA__CFG1, CYREG_UDB_PA3_CFG1
 .set Button_output__0__PA__CFG10, CYREG_UDB_PA3_CFG10

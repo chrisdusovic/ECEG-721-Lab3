@@ -2,7 +2,7 @@
 --	Conversion of BLE Lab 3.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Oct 06 20:03:08 2016
+--	Mon Oct 17 17:17:37 2016
 --
 
 USE cypress.cypress.all;
@@ -15,18 +15,17 @@ ARCHITECTURE R_T_L OF top_RTL IS
 SIGNAL tmpOE__Heart_Rate_input_net_0 : bit;
 SIGNAL zero : bit;
 SIGNAL tmpFB_0__Heart_Rate_input_net_0 : bit;
-TERMINAL Net_1633 : bit;
+TERMINAL Net_1684 : bit;
 SIGNAL tmpIO_0__Heart_Rate_input_net_0 : bit;
 TERMINAL tmpSIOVREF__Heart_Rate_input_net_0 : bit;
 SIGNAL one : bit;
 SIGNAL tmpINTERRUPT_0__Heart_Rate_input_net_0 : bit;
 SIGNAL tmpOE__SW2_Switch_net_0 : bit;
-SIGNAL Net_1659 : bit;
+SIGNAL Net_1665 : bit;
 SIGNAL tmpIO_0__SW2_Switch_net_0 : bit;
 TERMINAL tmpSIOVREF__SW2_Switch_net_0 : bit;
-SIGNAL Net_1660 : bit;
+SIGNAL Net_1047 : bit;
 SIGNAL tmpOE__Button_output_net_0 : bit;
-SIGNAL Net_1657 : bit;
 SIGNAL tmpFB_0__Button_output_net_0 : bit;
 SIGNAL tmpIO_0__Button_output_net_0 : bit;
 TERMINAL tmpSIOVREF__Button_output_net_0 : bit;
@@ -176,12 +175,13 @@ SIGNAL \PWM:Net_69\ : bit;
 SIGNAL \PWM:Net_66\ : bit;
 SIGNAL \PWM:Net_82\ : bit;
 SIGNAL \PWM:Net_72\ : bit;
-SIGNAL Net_1655 : bit;
-SIGNAL Net_1654 : bit;
-SIGNAL Net_1656 : bit;
-SIGNAL Net_1658 : bit;
-SIGNAL Net_1653 : bit;
-SIGNAL Net_1646 : bit;
+SIGNAL Net_1713 : bit;
+SIGNAL Net_1712 : bit;
+SIGNAL Net_1714 : bit;
+SIGNAL Net_1778 : bit;
+SIGNAL Net_1716 : bit;
+SIGNAL Net_1711 : bit;
+SIGNAL Net_1680 : bit;
 BEGIN
 
 zero <=  ('0') ;
@@ -246,7 +246,7 @@ Heart_Rate_input:cy_psoc3_pins_v1_10
 	PORT MAP(oe=>(tmpOE__Heart_Rate_input_net_0),
 		y=>(zero),
 		fb=>(tmpFB_0__Heart_Rate_input_net_0),
-		analog=>Net_1633,
+		analog=>Net_1684,
 		io=>(tmpIO_0__Heart_Rate_input_net_0),
 		siovref=>(tmpSIOVREF__Heart_Rate_input_net_0),
 		annotation=>(open),
@@ -314,7 +314,7 @@ SW2_Switch:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__Heart_Rate_input_net_0),
 		y=>(zero),
-		fb=>Net_1659,
+		fb=>Net_1665,
 		analog=>(open),
 		io=>(tmpIO_0__SW2_Switch_net_0),
 		siovref=>(tmpSIOVREF__SW2_Switch_net_0),
@@ -325,7 +325,7 @@ SW2_Switch:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>tmpOE__Heart_Rate_input_net_0,
 		out_reset=>zero,
-		interrupt=>Net_1660);
+		interrupt=>Net_1047);
 Button_output:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"4ab17e0d-af84-43d2-843e-04fb26e61382",
 		drive_mode=>"110",
@@ -382,7 +382,7 @@ Button_output:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__Heart_Rate_input_net_0),
-		y=>Net_1657,
+		y=>Net_1665,
 		fb=>(tmpFB_0__Button_output_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Button_output_net_0),
@@ -397,7 +397,7 @@ Button_output:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__Button_output_net_0);
 Wakeup_ISR:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10")
-	PORT MAP(int_signal=>Net_1660);
+	PORT MAP(int_signal=>Net_1047);
 Led_Advertising_Green:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"e851a3b9-efb8-48be-bbb8-b303b216c393",
 		drive_mode=>"110",
@@ -558,7 +558,7 @@ Led_Connected_Blue:cy_psoc3_pins_v1_10
 		needs_dsab=>'1',
 		deepsleep_available=>'1',
 		has_resistor=>'0')
-	PORT MAP(vplus=>Net_1633,
+	PORT MAP(vplus=>Net_1684,
 		vminus=>\Opamp:Net_9\,
 		vout1=>\Opamp:Net_18\,
 		rs_bot=>\Opamp:Net_29\,
@@ -923,18 +923,18 @@ Led_Connected_Blue:cy_psoc3_pins_v1_10
 	PORT MAP(noconnect=>\ADC:Net_3227\);
 \PWM:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"")
-	PORT MAP(clock=>Net_1646,
+	PORT MAP(clock=>Net_1680,
 		capture=>zero,
 		count=>tmpOE__Heart_Rate_input_net_0,
 		reload=>zero,
 		stop=>zero,
 		start=>zero,
-		underflow=>Net_1655,
-		overflow=>Net_1654,
-		compare_match=>Net_1656,
-		line_out=>Net_1657,
-		line_out_compl=>Net_1658,
-		interrupt=>Net_1653);
+		underflow=>Net_1713,
+		overflow=>Net_1712,
+		compare_match=>Net_1714,
+		line_out=>Net_1778,
+		line_out_compl=>Net_1716,
+		interrupt=>Net_1711);
 Clock_1:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"80b01d96-ecac-41bd-b4d4-04a751a00543",
@@ -943,7 +943,7 @@ Clock_1:cy_clock_v1_0
 		period=>"83333333.3333333",
 		is_direct=>'0',
 		is_digital=>'0')
-	PORT MAP(clock_out=>Net_1646,
+	PORT MAP(clock_out=>Net_1680,
 		dig_domain_out=>open);
 
 END R_T_L;
